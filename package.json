@@ -1,0 +1,28 @@
+{
+  "name": "node-cli-options-parsing-review",
+  "version": "0.1.0",
+  "description": "Review of modules for parsing command line options in Node.js.",
+  "main": "table.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/easimonenko/node-cli-options-parsing-review.git"
+  },
+  "keywords": [
+    "node",
+    "cli",
+    "example",
+    "review"
+  ],
+  "author": "Evgeniy A. Simonenko <easimonenko@mail.ru>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/easimonenko/node-cli-options-parsing-review/issues"
+  },
+  "homepage": "https://github.com/easimonenko/node-cli-options-parsing-review#readme",
+  "devDependencies": {
+    "handlebars": "^4.0.5"
+  }
+}
