@@ -1,0 +1,40 @@
+[
+  {
+    "github-name": "tj/commander.js",
+    "npm-name": "commander"
+  },
+  {
+    "github-name": "substack/minimist",
+    "npm-name": "minimist"
+  },
+  {
+    "github-name": "yargs/yargs",
+    "npm-name": "yargs"
+  },
+  {
+    "github-name": "substack/node-optimist",
+    "npm-name": "optimist",
+    "deprecated": true
+  },
+  {
+    "github-name": "sindresorhus/meow",
+    "npm-name": "meow"
+  },
+  {
+    "github-name": "npm/nopt",
+    "npm-name": "nopt"
+  },
+  {
+    "github-name": "harthur/nomnom",
+    "npm-name": "nomnom",
+    "deprecated": true
+  },
+  {
+    "github-name": "sgmonda/stdio",
+    "npm-name": "stdio"
+  },
+  {
+    "github-name": "75lb/command-line-args",
+    "npm-name": "command-line-args"
+  }
+]

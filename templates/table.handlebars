@@ -1,0 +1,38 @@
+<table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+    <thead>
+        <tr>
+            <th class="mdl-data-table__cell--non-numeric">NPM Package</th>
+            <th>NPM Stars</th>
+            <th>Deprecated</th>
+            <th>Last Version</th>
+            <th class="mdl-data-table__cell--non-numeric">Last Update</th>
+            <th class="mdl-data-table__cell--non-numeric">Created</th>
+            <th>Dependencis</th>
+            <th class="mdl-data-table__cell--non-numeric">GitHub Repository</th>
+            <th>GitHub Stars</th>
+            <th class="mdl-data-table__cell--non-numeric">Last Commit</th>
+            <th>Rating</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each packages}}
+        <tr>
+            <td class="mdl-data-table__cell--non-numeric">
+                <a href="https://www.npmjs.org/package/{{npmName}}">{{npmName}}</a>
+            </td>
+            <td>{{npmStars}}</td>
+            <td>{{#if deprecated}}<i class="material-icons">check</i>{{/if}}</td>
+            <td>{{lastVersion}}</td>
+            <td class="mdl-data-table__cell--non-numeric">{{lastUpdate}}</td>
+            <td class="mdl-data-table__cell--non-numeric">{{created}}</td>
+            <td>{{dependencies}}</td>
+            <td class="mdl-data-table__cell--non-numeric">
+                <a href="https://github.com/{{githubName}}">{{githubName}}</a>
+            </td>
+            <td>{{githubStars}}</td>
+            <td class="mdl-data-table__cell--non-numeric">{{lastCommit}}</td>
+            <td>{{rating}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
