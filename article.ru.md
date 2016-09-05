@@ -60,6 +60,124 @@ NPM, округляем получившееся число, это и есть 
 
 ## commander
 
+Научиться использовать пакет `commander` несложно. Автор предоставил, хоть и
+невсегда ясную, но всё же неплохую документацию. Чтобы разобраться, как
+использовать этот пакет, нужно было как следует поэкспериментировать. Ниже я
+опишу основные моменты этого пакета.
+
+Итак, после того как мы загрузили пакет:
+
+``` javascript
+const commander = require('commander')
+```
+
+Мы можем, вызывая последовательно или раздельно его функции, настроить его на
+обработку опций командной строки. При этом пакет обеспечивает:
+
+* короткие опции, например, `-s`;
+* длинные опции, например, `--source`;
+* альтернативные названия опций, например, `--source` и `-s`;
+* дополнительные параметры;
+* значения по-умолчанию для дополнительных параметров;
+* обработчики для дополнительных параметров;
+* субкоманды, например, `install package`;
+* автоматическое формирование подсказки;
+* настройку подстказки.
+
+Короткие опции объявляются так:
+
+``` javascript
+commander
+  .option('-a', 'option a')
+```
+
+Первый аргумент функции `option` задаёт формат опции, а второй даёт ей словесное
+описание. Доступ к опции `-a` в коде программы осуществляется через
+соответствующее свойство `commander`:
+
+``` javascript
+if (commander.a) {
+  console.log(commander.a)
+}
+```
+
+Пример для длинной опции:
+
+``` javascript
+commander
+  .option('--camel-case-option', 'camel case option')
+```
+
+При этом в коде доступ к опции будет происходить по имени `camelCaseOption`.
+
+Возможно задание для опций параметров как обязательных, так необязательных:
+
+``` javascript
+commander
+  .option('-s, --source <path>', 'source file')
+  .option('-l, --list [items]', 'value list', toArray, [])
+```
+
+Во втором случае, параметр у опции list необязателен, для него назначены
+функция-обработчик и значение по-умолчанию.
+
+Параметры опций могут обрабатываться также с помощью регулярных выражений,
+например:
+
+``` javascript
+commander
+  .option('--size [size]', 'size', /^(large|medium|small)$/i)
+```
+
+Субкоманда подразумевает, что для неё пишется отдельный модуль. При этом, если
+основная программа называется `program`, а субкоманда `command`, то модуль
+субкоманды должен называться `program-command`. Опции, переданные после
+субкоманды передаются модулю команды.
+
+``` javascript
+commander
+  .command('search <first> [other...]', 'search with query')
+  .alias('s')
+```
+
+Для автоматической подсказки можно указать версию программы:
+
+``` javascript
+commander.version('0.2.0')
+```
+
+Подсказка может быть сопровождена дополнительными действия, например, дополнена
+нестандартными текстом. Для этого нужно обрабатывать событие `--help`.
+
+``` javascript
+commander.on('--help', () => {
+  console.log('  Examples:')
+  console.log('')
+  console.log('    node commander.js')
+  console.log('    node commander.js --help')
+  console.log('    node commander.js -h')
+  console.log('    node commander.js --version')
+  console.log('    node commander.js -V')
+  console.log('    node commander.js -s')
+  console.log('    node commander.js -s abc')
+  console.log('    node commander.js --camel-case-option')
+  console.log('    node commander.js --list 1,2,3')
+  console.log('    node commander.js -l 1,2,3')
+  console.log('    node commander.js --size=large')
+  console.log('    node commander.js --size large')
+  console.log('    node commander.js search a b c')
+  console.log('    node commander.js -abc')
+})
+```
+
+Завершается настройка вызовом функции `parse` с параметром `process.argv`:
+
+``` javascript
+commander.parse(process.argv)
+```
+
+## minimist
+
 ...
 
 ---
