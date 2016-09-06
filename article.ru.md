@@ -178,6 +178,181 @@ commander.parse(process.argv)
 
 ## minimist
 
+Автор пакета *minimist* предоставил весьма минималистичную документацию. Но всё
+равно попробуем разобраться.
+
+После того как мы загрузили пакет, подключим и воспользуемся им:
+
+``` javascript
+const minimist = require('minimist')
+
+const args = minimist(process.argv.slice(2))
+
+console.dir(args)
+```
+
+Этот незамысловатый код позволит нам начать работать с этим пакетом.
+Поэкспериментируем:
+
+``` sh
+node minimist.js
+```
+
+``` javascript
+{ _: [] }
+```
+
+Что мы здесь видим? Набор разобранных опций организуется в объект. Свойство с
+именем `_` содержит список параметров, не связанных с опциями. Например:
+
+``` sh
+node minimist.js a b c
+```
+
+``` javascript
+{ _: [ 'a', 'b', 'c' ] }
+```
+
+Продолжим эксперименты:
+
+``` sh
+node minimist.js --help
+```
+
+``` javascript
+{ _: [], help: true }
+```
+
+Как видим, minimist не предоставляет автоматического отображения подсказки, а
+просто определяет наличие данной опции.
+
+Поэкспериментируем ещё:
+
+``` sh
+node minimist.js -abc
+```
+
+``` javascript
+{ _: [], a: true, b: true, c: true }
+```
+
+Всё верно. Посмотрим ещё:
+
+``` sh
+node minimist.js --camel-case-option
+```
+
+``` javascript
+{ _: [], 'camel-case-option': true }
+```
+
+В отличие от minimist никаких преобразований.
+
+Опция с параметром:
+
+``` sh
+node minimist.js --source path
+```
+
+``` javascript
+{ _: [], source: 'path' }
+```
+
+Со знаком равно тоже работает:
+
+``` sh
+node minimist.js --source=path
+```
+
+``` javascript
+{ _: [], source: 'path' }
+```
+
+Поддерживается специальный режим передачи опций с использванием `--`:
+
+``` sh
+node minimist.js -h -- --size=large
+```
+
+``` javascript
+{ _: [ '--size=large' ], h: true }
+```
+
+Аргументы, следующие за `--` не обрабатываются и просто помещаются в свойство
+`_`.
+
+Вот в общем-то и всё, что есть в базе. Посмотрим, какие возможности настройки
+обработки опций предлагает нам minimist.
+
+Для настройки обработки аргументов командной строки мы должны передать парсеру
+второй параметр с нашими настройками. Рассмотрим на примерах:
+
+``` javascript
+const minimist = require('minimist')
+
+const args = minimist(process.argv.slice(2), {
+  string: ['size'],
+  boolean: true,
+  alias: {'help': 'h'},
+  default: {'help': true},
+  unknown: (arg) => {
+    console.error('Unknown option: ', arg)
+    return false
+  }
+})
+
+console.dir(args)
+```
+
+``` sh
+node minimist-with-settings.js --help
+```
+
+``` javascript
+{ _: [], help: true, h: true }
+```
+
+``` sh
+node minimist-with-settings.js -h
+```
+
+``` javascript
+{ _: [], h: true, help: true }
+```
+
+Мы задали для опции `--help` синоним `-h`. Результат, как видим, идентичен.
+
+Опция `boolean`, установленная в `true`, говорит о том, что все опции без
+параметров после знака равно будут иметь булево значение. Например:
+
+``` sh
+node minimist-with-settings.js --no-help
+```
+
+``` javascript
+{ _: [], help: false, h: false }
+```
+
+Здесь мы увидели, как обрабатываются булевы опции: префикс `no` устанавливает
+значение опции равным `false`.
+
+Но такой пример при этом больше не работает, нужен знак равно:
+
+``` sh
+node minimist-with-settings.js --size large
+```
+
+``` plain
+Unknown option:  large
+{ _: [], size: '', help: true, h: true }
+```
+
+Здесь же мы увидели обработку неизвестной опции и опции по-умолчанию.
+
+Общий вывод: по сравнению с `commander` довольно минималистично, но вполне
+удобно.
+
+
 ...
 
 ---
