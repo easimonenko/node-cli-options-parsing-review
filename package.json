@@ -1,6 +1,6 @@
 {
   "name": "node-cli-options-parsing-review",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Review of modules for parsing command line options in Node.js.",
   "main": "table.js",
   "scripts": {
@@ -28,5 +28,6 @@
   "dependencies": {
     "commander": "^2.9.0",
     "minimist": "^1.2.0"
-  }
+  },
+  "private": true
 }

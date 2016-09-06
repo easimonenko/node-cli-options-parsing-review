@@ -1,5 +1,11 @@
 # ChangeLog
 
+## Release 0.3.0, 2016-09-06
+
+* Sample for **minimist**.
+* The appropriate section in the article in the Russian language.
+* Move sample code files and table files in appropriate folders.
+
 ## Release 0.2.0, 2016-09-05
 
 * Sample for **commander**.
