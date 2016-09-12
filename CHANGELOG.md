@@ -1,5 +1,11 @@
 # ChangeLog
 
+## Release 0.4.0, 2016-09-12
+
+* Sample for **yargs**.
+* The appropriate section in the article in the Russian language.
+* Minimal sample for **commander**.
+
 ## Release 0.3.0, 2016-09-06
 
 * Sample for **minimist**.

@@ -35,3 +35,15 @@ cd samples
 node mininist.js -abc --help --size=large -- 1 2 3
 node mininist-with-settings.js -abc --help --size=large -- 1 2 3
 ```
+
+## Sample for *yargs*
+
+Try:
+
+``` sh
+cd samples
+node yargs.js --version
+node yargs.js -h
+node yargs.js --size=middle
+node yargs.js --list 1 2 3 --size=large
+```
