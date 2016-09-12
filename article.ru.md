@@ -50,9 +50,10 @@ NPM, округляем получившееся число, это и есть 
 Из получившейся таблицы хорошо видно, что главный фаворит, это пакет
 *commander*. Далее идут с близким рейтингом пакеты *minimist* и *yargs*.
 Хороший рейтинг имеет также пакет *optimist*, но автором он объявлен
-устаревшим, а на его место он рекомендует им же написанный пакет *minimist*.
-В качестве преемника *optimist* также позиционируется пакет *yargs*. Авторы
-объявленного устаревшим *nomnom* рекомендуют *commander*.
+устаревшим, а на его место он рекомендует им же написанный пакет *minimist*, а
+также советует посмотреть *yargs* и *nomnom*. В качестве преемника *optimist*
+также позиционируется пакет *yargs*. Авторы объявленного устаревшим *nomnom*
+рекомендуют *commander*.
 
 Таким образом в первую очередь нужно рассмотреть пакеты *commander*, *minimist*
 и *yargs*. Вероятно есть смысл также обратить внимание на пакеты *meow* и
@@ -352,8 +353,163 @@ Unknown option:  large
 Общий вывод: по сравнению с `commander` довольно минималистично, но вполне
 удобно.
 
+## yargs
 
+В отличие от minimist и commander *yargs* предлагает весьма пространную,
+документацию, доступную по ссылке:
+[http://yargs.js.org/docs/](http://yargs.js.org/docs/).
+
+Как обычно начнём с минимального примера:
+
+``` javascript
+const yargs = require('yargs')
+
+console.dir(yargs.argv)
+```
+
+``` sh
+cd samples/
+node yargs.js
+```
+
+``` javascript
+{ _: [], '$0': 'yargs.js' }
+```
+
+Здесь мы видим пустой список необработанных опций, а также имя файла нашей
+программы.
+
+Рассмотрим пример посложней:
+
+``` sh
+node yargs.js -abc --help --size=large 1 2 3
+```
+
+``` javascript
+{ _: [ 1, 2, 3 ],
+  a: true,
+  b: true,
+  c: true,
+  help: true,
+  size: 'large',
+  '$0': 'yargs.js' }
+```
+
+Здесь поинтереснее будет: во-первых, переданные опции восприняты верно;
+во-вторых, для их обработки мы не написали ни строчки кода.
+
+Но уже здесь видно, что опция `--help` без предварительной настройки по
+предназначению не обрабатывается.
+
+Рассмотрим теперь как использовать yargs в более сложных случаях на следующем
+примере:
+
+``` javascript
+const yargs = require('yargs')
+
+yargs
+  .usage('Usage: $0 -abc [--list 1,2,3] --size large|meduim|small [--help]')
+  .version('1.0.0')
+  .demand(['size'])
+  .choices('size', ['large', 'medium', 'small'])
+  .default('list', [], 'List of values')
+  .describe('list', 'value list')
+  .array('list')
+  .help('help')
+  .alias('help', 'h')
+  .example('$0 --size=medium')
+  .epilog('(c) 2016 My Name')
+
+console.dir(yargs.argv)
+```
+
+``` sh
+node yargs.js -h
+```
+
+Получаем:
+
+```
+Usage: yargs.js -abc [--list 1,2,3] --size large|meduim|small [--help]
+
+Options:
+  --version   Show version number                                      [boolean]
+  --list      value list                       [array] [default: List of values]
+  --help, -h  Show help                                                [boolean]
+  --size                        [required] [choices: "large", "medium", "small"]
+
+Examples:
+  yargs.js --size=medium
+(c) 2016 My Name
+```
 ...
+
+В этом примере мы задали текст, который будет выводиться с опцией `help`. Опции
+`help` мы также задали синоним `h`. Задали версию программы, которая будет
+выводиться с опцией `version`.
+
+Опция `size` обязательная, более того, для неё
+задан список допустимых значений.
+
+``` sh
+node yargs.js --size large
+```
+
+``` javascript
+{ _: [],
+  version: false,
+  help: false,
+  h: false,
+  size: 'large',
+  list: [],
+  '$0': 'yargs.js' }
+```
+
+Если `size` задать значение не соответствующее ни одному из списка, то получим
+сообщение об ошибке:
+
+``` sh
+node yargs.js --size=middle
+```
+
+```
+...
+Invalid values:
+  Argument: size, Given: "middle", Choices: "large", "medium", "small"
+```
+
+Для опции `list` задано значение по умолчанию. Эта опция также трактуется как
+массив значений:
+
+``` sh
+node yargs.js --list 1 2 3 --size=large
+```
+
+``` javascript
+{ _: [],
+  version: false,
+  help: false,
+  h: false,
+  list: [ 1, 2, 3 ],
+  size: 'large',
+  '$0': 'yargs.js' }
+```
+
+## Резюме
+
+Пакеты *commander* и *minimist* выделяются минимальным числом зависимостей, в то
+время как *yargs* поражает не только числом своих зависимостей, но и числом
+своих возможностей.
+
+Какой пакет лучше, очевидно, сказать нельзя. По мне, *minimist* вполне
+достаточен для простейших случаев, но в сложных ситуациях, особенно, если
+программа пишется не только лично для себя, при его использовании придётся
+написать много кода обработки опций вручную. В этом случае лучше воспользоваться
+*commander* или *yargs*, на ваш вкус.
+
+Все три рассматриваемые здесь пакета имеют определения типов на TypeScript, что
+позволяет иметь в [Code](https://code.visualstudio.com/) работающий
+IntelliSense.
 
 ---
 
