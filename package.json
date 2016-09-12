@@ -27,7 +27,8 @@
   },
   "dependencies": {
     "commander": "^2.9.0",
-    "minimist": "^1.2.0"
+    "minimist": "^1.2.0",
+    "yargs": "^5.0.0"
   },
   "private": true
 }

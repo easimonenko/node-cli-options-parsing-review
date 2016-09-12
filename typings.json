@@ -1,7 +1,8 @@
 {
   "name": "node-cli-options-parsing-review",
   "dependencies": {
-    "minimist": "registry:npm/minimist#1.0.0+20160723033700"
+    "minimist": "registry:npm/minimist#1.0.0+20160723033700",
+    "yargs": "registry:npm/yargs#5.0.0+20160817153026"
   },
   "globalDependencies": {
     "commander": "registry:dt/commander#2.3.0+20160317120654",
