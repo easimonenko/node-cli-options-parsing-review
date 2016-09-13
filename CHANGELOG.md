@@ -1,5 +1,9 @@
 # ChangeLog
 
+## Release 1.0.0, 2016-09-13
+
+* Last edit before publication.
+
 ## Release 0.4.0, 2016-09-12
 
 * Sample for **yargs**.

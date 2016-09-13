@@ -4,10 +4,6 @@
 
 The "combing" of the article before publication.
 
-## 0.5.0
-
-Summarizing.
-
 ## 0.4.0
 
 Review of package `yargs`.
