@@ -7,22 +7,37 @@ Node.js, как и другие среды разработки, предост�
 небольшую программу, которая построила сводную таблицу по этим пакетам,
 выбрал из них три самых популярных и рассмотрел их поближе.
 
-![Сводная таблица](./table/table.png)
+![Сводная таблица](./table/table_2016-09-14_22-57-37.png)
 
 ## Сводная таблица
 
 Так как я вынужден был разместить здесь эту таблицу как изображение, то ниже
 привожу список соответствующих ссылок:
 
-1. [commander](https://www.npmjs.org/package/commander) | [tj/commander.js](https://github.com/tj/commander.js)
-2. [minimist](https://www.npmjs.org/package/minimist) | [substack/minimist](https://github.com/substack/minimist)
-3. [yargs](https://www.npmjs.org/package/yargs) | [yargs/yargs](https://github.com/yargs/yargs)
-4. [optimist](https://www.npmjs.org/package/optimist) | [substack/node-optimist](https://github.com/substack/node-optimist)
-5. [meow](https://www.npmjs.org/package/meow) | [sindresorhus/meow](https://github.com/sindresorhus/meow)
-6. [nopt](https://www.npmjs.org/package/nopt) | [npm/nopt](https://github.com/npm/nopt)
-7. [nomnom](https://www.npmjs.org/package/nomnom) | [harthur/nomnom](https://github.com/harthur/nomnom)
-8. [stdio](https://www.npmjs.org/package/stdio) | [sgmonda/stdio](https://github.com/sgmonda/stdio)
-9. [command-line-args](https://www.npmjs.org/package/command-line-args) | [75lb/command-line-args](https://github.com/75lb/command-line-args)
+1. NPM: [commander](https://www.npmjs.org/package/commander)
+| GitHub: [tj/commander.js](https://github.com/tj/commander.js)
+2. NPM: [minimist](https://www.npmjs.org/package/minimist)
+| GitHub: [substack/minimist](https://github.com/substack/minimist)
+3. NPM: [yargs](https://www.npmjs.org/package/yargs)
+| GitHub: [yargs/yargs](https://github.com/yargs/yargs)
+4. NPM: [optimist](https://www.npmjs.org/package/optimist)
+| GitHub: [substack/node-optimist](https://github.com/substack/node-optimist)
+5. NPM: [meow](https://www.npmjs.org/package/meow)
+| GitHub: [sindresorhus/meow](https://github.com/sindresorhus/meow)
+6. NPM: [nopt](https://www.npmjs.org/package/nopt)
+| GitHub: [npm/nopt](https://github.com/npm/nopt)
+7. NPM: [nomnom](https://www.npmjs.org/package/nomnom)
+| GitHub: [harthur/nomnom](https://github.com/harthur/nomnom)
+8. NPM: [stdio](https://www.npmjs.org/package/stdio)
+| GitHub: [sgmonda/stdio](https://github.com/sgmonda/stdio)
+9. NPM: [command-line-args](https://www.npmjs.org/package/command-line-args)
+| GitHub: [75lb/command-line-args](https://github.com/75lb/command-line-args)
+10. NPM: [argparse](https://www.npmjs.org/package/argparse)
+| GitHub: [nodeca/argparse](https://github.com/nodeca/argparse)
+11. NPM: [argentum](https://www.npmjs.org/package/argentum)
+| GitHub: [rumkin/argentum](https://github.com/rumkin/argentum)
+12. NPM: [getoptie](https://www.npmjs.org/package/getoptie)
+| GitHub: [avz/node-getoptie](https://github.com/avz/node-getoptie)
 
 Эта таблица была сгенерирована небольшой программой на JavaScript. Исходные
 тексты этого обзора, включая и эту программу, расположены в репозитории на
@@ -63,7 +78,7 @@ k = floor( Sgithub / Snpm)
 ## commander
 
 Научиться использовать пакет `commander` несложно. Автор предоставил, хоть и
-невсегда ясную, но всё же неплохую документацию. Чтобы разобраться, как
+не всегда ясную, но всё же неплохую документацию. Чтобы разобраться, как
 использовать этот пакет, нужно было как следует поэкспериментировать. Ниже я
 опишу основные моменты этого пакета.
 
