@@ -1,6 +1,6 @@
 {
   "name": "node-cli-options-parsing-review",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Review of modules for parsing command line options in Node.js.",
   "main": "",
   "scripts": {

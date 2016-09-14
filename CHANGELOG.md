@@ -1,5 +1,13 @@
 # ChangeLog
 
+## Release 1.0.1, 2016-09-14
+
+* Added info about another three packages:
+  * argparse
+  * argentum
+  * getoptie
+* Added sorting in table generator.
+
 ## Release 1.0.0, 2016-09-13
 
 * Last edit before publication.
