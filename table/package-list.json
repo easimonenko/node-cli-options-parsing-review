@@ -36,5 +36,17 @@
   {
     "github-name": "75lb/command-line-args",
     "npm-name": "command-line-args"
+  },
+  {
+    "github-name": "nodeca/argparse",
+    "npm-name": "argparse"
+  },
+  {
+    "github-name": "rumkin/argentum",
+    "npm-name": "argentum"
+  },
+  {
+    "github-name": "avz/node-getoptie",
+    "npm-name": "getoptie"
   }
 ]

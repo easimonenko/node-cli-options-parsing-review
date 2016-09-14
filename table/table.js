@@ -177,6 +177,9 @@ function makeHtml() {
     for (let i = 0; i < packages.length; i++) {
       packages[i]['rating'] = packages[i]['npmStars'] * ratingK + packages[i]['githubStars']
     }
+    packages.sort((a, b) => {
+      return b['rating'] - a['rating']
+    })
     const tHtml = fs.readFileSync('./templates/html.handlebars')
     const ctHtml = handlebars.compile(tHtml.toString())
     const tTable = fs.readFileSync('./templates/table.handlebars')
