@@ -48,5 +48,13 @@
   {
     "github-name": "avz/node-getoptie",
     "npm-name": "getoptie"
+  },
+  {
+    "github-name": "node-js-libs/cli",
+    "npm-name": "cli"
+  },
+  {
+    "github-name": "trentm/node-dashdash",
+    "npm-name": "dashdash"
   }
 ]

@@ -7,7 +7,7 @@ Node.js, как и другие среды разработки, предост�
 небольшую программу, которая построила сводную таблицу по этим пакетам,
 выбрал из них три самых популярных и рассмотрел их поближе.
 
-![Сводная таблица](./table/table_2016-09-14_22-57-37.png)
+![Сводная таблица](./table/table_2016-09-18_13-37-53.png)
 
 ## Сводная таблица
 
@@ -22,21 +22,25 @@ Node.js, как и другие среды разработки, предост�
 | GitHub: [yargs/yargs](https://github.com/yargs/yargs)
 4. NPM: [optimist](https://www.npmjs.org/package/optimist)
 | GitHub: [substack/node-optimist](https://github.com/substack/node-optimist)
-5. NPM: [meow](https://www.npmjs.org/package/meow)
+5. NPM: [cli](https://www.npmjs.com/package/cli)
+| GitHub: [node-js-libs/cli](https://github.com/node-js-libs/cli)
+6. NPM: [meow](https://www.npmjs.org/package/meow)
 | GitHub: [sindresorhus/meow](https://github.com/sindresorhus/meow)
-6. NPM: [nopt](https://www.npmjs.org/package/nopt)
+7. NPM: [nopt](https://www.npmjs.org/package/nopt)
 | GitHub: [npm/nopt](https://github.com/npm/nopt)
-7. NPM: [nomnom](https://www.npmjs.org/package/nomnom)
+8. NPM: [nomnom](https://www.npmjs.org/package/nomnom)
 | GitHub: [harthur/nomnom](https://github.com/harthur/nomnom)
-8. NPM: [stdio](https://www.npmjs.org/package/stdio)
+9. NPM: [stdio](https://www.npmjs.org/package/stdio)
 | GitHub: [sgmonda/stdio](https://github.com/sgmonda/stdio)
-9. NPM: [command-line-args](https://www.npmjs.org/package/command-line-args)
+10. NPM: [command-line-args](https://www.npmjs.org/package/command-line-args)
 | GitHub: [75lb/command-line-args](https://github.com/75lb/command-line-args)
-10. NPM: [argparse](https://www.npmjs.org/package/argparse)
+11. NPM: [argparse](https://www.npmjs.org/package/argparse)
 | GitHub: [nodeca/argparse](https://github.com/nodeca/argparse)
-11. NPM: [argentum](https://www.npmjs.org/package/argentum)
+12. NPM: [dashdash](https://www.npmjs.com/package/dashdash)
+| GitHub: [trentm/node-dashdash](https://github.com/trentm/node-dashdash)
+13. NPM: [argentum](https://www.npmjs.org/package/argentum)
 | GitHub: [rumkin/argentum](https://github.com/rumkin/argentum)
-12. NPM: [getoptie](https://www.npmjs.org/package/getoptie)
+14. NPM: [getoptie](https://www.npmjs.org/package/getoptie)
 | GitHub: [avz/node-getoptie](https://github.com/avz/node-getoptie)
 
 Эта таблица была сгенерирована небольшой программой на JavaScript. Исходные
@@ -73,7 +77,8 @@ k = floor( Sgithub / Snpm)
 
 Таким образом в первую очередь нужно рассмотреть пакеты *commander*, *minimist*
 и *yargs*. Вероятно есть смысл также обратить внимание на пакеты *meow* и
-*nopt*, но не в этот раз.
+*nopt*, но не в этот раз. Уже после публикации статьи, благодаря сервису
+[npms.io](https://npms.io/) удалось обнаружить ещё один популярный пакет *cli*.
 
 ## commander
 
