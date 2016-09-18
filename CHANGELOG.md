@@ -1,5 +1,9 @@
 # ChangeLog
 
+## Release 1.0.2, 2016-09-18
+
+Added info about packages *cli* and *dashdash*.
+
 ## Release 1.0.1, 2016-09-14
 
 * Added info about another three packages:
