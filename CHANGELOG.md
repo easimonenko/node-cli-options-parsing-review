@@ -1,5 +1,9 @@
 # ChangeLog
 
+## Release 1.0.3, 2016-12-30
+
+Added the section "Few analytics.".
+
 ## Release 1.0.2, 2016-09-18
 
 Added info about packages *cli* and *dashdash*.
