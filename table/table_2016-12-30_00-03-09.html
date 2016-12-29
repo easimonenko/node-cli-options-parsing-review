@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Node CLI Options Parsing Review Table</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+        <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css"/>
+        <script defer src="https://code.getmdl.io/1.3.0/material.js"></script>
+        <style>
+            table.mdl-data-table th, td {
+                font-family: 'Ubuntu Mono', 'Monospace';
+                font-size: 14pt;
+                border-top: 1px solid rgba(0,0,0,.12);
+                border-bottom: 1px solid rgba(0,0,0,.12);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Node CLI Options Parsing Review Table</h1>
+        <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+    <thead>
+        <tr>
+            <th class="mdl-data-table__cell--non-numeric">NPM Package</th>
+            <th>NPM Stars</th>
+            <th>Deprecated</th>
+            <th>Last Version</th>
+            <th class="mdl-data-table__cell--non-numeric">Last Update</th>
+            <th class="mdl-data-table__cell--non-numeric">Created</th>
+            <th>Dependencis</th>
+            <th class="mdl-data-table__cell--non-numeric">GitHub Repository</th>
+            <th>GitHub Stars</th>
+            <th class="mdl-data-table__cell--non-numeric">Last Commit</th>
+            <th>Rating</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="mdl-data-table__cell--non-numeric">
+                <a href="https://www.npmjs.org/package/commander">commander</a>
+            </td>
+            <td>669</td>
+            <td></td>
+            <td>2.9.0</td>
+            <td class="mdl-data-table__cell--non-numeric">2016-12-28</td>
+            <td class="mdl-data-table__cell--non-numeric">2011-08-15</td>
+            <td>1</td>
+            <td class="mdl-data-table__cell--non-numeric">
+                <a href="https://github.com/tj/commander.js">tj/commander.js</a>
+            </td>
+            <td>6905</td>
+            <td class="mdl-data-table__cell--non-numeric">2016-11-03</td>
+            <td>13595</td>
+        </tr>
+        <tr>
+            <td class="mdl-data-table__cell--non-numeric">
+                <a href="https://www.npmjs.org/package/yargs">yargs</a>
+            </td>
+            <td>286</td>
+            <td></td>
+            <td>6.5.0</td>
+            <td class="mdl-data-table__cell--non-numeric">2016-12-29</td>
+            <td class="mdl-data-table__cell--non-numeric">2013-11-23</td>
+            <td>14</td>
+            <td class="mdl-data-table__cell--non-numeric">
+                <a href="https://github.com/yargs/yargs">yargs/yargs</a>
+            </td>
+            <td>2379</td>
+            <td class="mdl-data-table__cell--non-numeric">2016-12-29</td>
+            <td>5239</td>
+        </tr>
+        <tr>
+            <td class="mdl-data-table__cell--non-numeric">
+                <a href="https://www.npmjs.org/package/minimist">minimist</a>
+            </td>
+            <td>315</td>
+            <td></td>
+            <td>1.2.0</td>
+            <td class="mdl-data-table__cell--non-numeric">2016-12-23</td>
+            <td class="mdl-data-table__cell--non-numeric">2013-06-25</td>
+            <td>0</td>
+            <td class="mdl-data-table__cell--non-numeric">
+                <a href="https://github.com/substack/minimist">substack/minimist</a>
+            </td>
+            <td>1925</td>
+            <td class="mdl-data-table__cell--non-numeric">2015-08-29</td>
+            <td>5075</td>
+        </tr>
+        <tr>
+            <td class="mdl-data-table__cell--non-numeric">
+                <a href="https://www.npmjs.org/package/optimist">optimist</a>
+            </td>
+            <td>121</td>
+            <td><i class="material-icons">check</i></td>
+            <td>0.6.1</td>
+            <td class="mdl-data-table__cell--non-numeric">2016-12-23</td>
+            <td class="mdl-data-table__cell--non-numeric">2010-12-21</td>
+            <td>2</td>
+            <td class="mdl-data-table__cell--non-numeric">
+                <a href="https://github.com/substack/node-optimist">substack/node-optimist</a>
+            </td>
+            <td>2338</td>
+            <td class="mdl-data-table__cell--non-numeric">2014-02-05</td>
+            <td>3548</td>
+        </tr>
+        <tr>
+            <td class="mdl-data-table__cell--non-numeric">
+                <a href="https://www.npmjs.org/package/cli">cli</a>
+            </td>
+            <td>53</td>
+            <td></td>
+            <td>1.0.1</td>
+            <td class="mdl-data-table__cell--non-numeric">2016-11-03</td>
+            <td class="mdl-data-table__cell--non-numeric">2011-01-01</td>
+            <td>2</td>
+            <td class="mdl-data-table__cell--non-numeric">
+                <a href="https://github.com/node-js-libs/cli">node-js-libs/cli</a>
+            </td>
+            <td>638</td>
+            <td class="mdl-data-table__cell--non-numeric">2016-10-23</td>
+            <td>1168</td>
+        </tr>
+        <tr>
+            <td class="mdl-data-table__cell--non-numeric">
+                <a href="https://www.npmjs.org/package/meow">meow</a>
+            </td>
+            <td>46</td>
+            <td></td>
+            <td>3.7.0</td>
+            <td class="mdl-data-table__cell--non-numeric">2016-12-28</td>
+            <td class="mdl-data-table__cell--non-numeric">2013-01-24</td>
+            <td>10</td>
+            <td class="mdl-data-table__cell--non-numeric">
+                <a href="https://github.com/sindresorhus/meow">sindresorhus/meow</a>
+            </td>
+            <td>679</td>
+            <td class="mdl-data-table__cell--non-numeric">2016-11-03</td>
+            <td>1139</td>
+        </tr>
+        <tr>
+            <td class="mdl-data-table__cell--non-numeric">
+                <a href="https://www.npmjs.org/package/nopt">nopt</a>
+            </td>
+            <td>48</td>
+            <td></td>
+            <td>4.0.1</td>
+            <td class="mdl-data-table__cell--non-numeric">2016-12-14</td>
+            <td class="mdl-data-table__cell--non-numeric">2011-03-30</td>
+            <td>2</td>
+            <td class="mdl-data-table__cell--non-numeric">
+                <a href="https://github.com/npm/nopt">npm/nopt</a>
+            </td>
+            <td>402</td>
+            <td class="mdl-data-table__cell--non-numeric">2016-12-14</td>
+            <td>882</td>
+        </tr>
+        <tr>
+            <td class="mdl-data-table__cell--non-numeric">
+                <a href="https://www.npmjs.org/package/nomnom">nomnom</a>
+            </td>
+            <td>24</td>
+            <td><i class="material-icons">check</i></td>
+            <td>1.8.1</td>
+            <td class="mdl-data-table__cell--non-numeric">2016-11-07</td>
+            <td class="mdl-data-table__cell--non-numeric">2011-04-08</td>
+            <td>2</td>
+            <td class="mdl-data-table__cell--non-numeric">
+                <a href="https://github.com/harthur/nomnom">harthur/nomnom</a>
+            </td>
+            <td>444</td>
+            <td class="mdl-data-table__cell--non-numeric">2015-09-09</td>
+            <td>684</td>
+        </tr>
+        <tr>
+            <td class="mdl-data-table__cell--non-numeric">
+                <a href="https://www.npmjs.org/package/argparse">argparse</a>
+            </td>
+            <td>18</td>
+            <td></td>
+            <td>1.0.9</td>
+            <td class="mdl-data-table__cell--non-numeric">2016-12-05</td>
+            <td class="mdl-data-table__cell--non-numeric">2012-05-16</td>
+            <td>1</td>
+            <td class="mdl-data-table__cell--non-numeric">
+                <a href="https://github.com/nodeca/argparse">nodeca/argparse</a>
+            </td>
+            <td>170</td>
+            <td class="mdl-data-table__cell--non-numeric">2016-11-27</td>
+            <td>350</td>
+        </tr>
+        <tr>
+            <td class="mdl-data-table__cell--non-numeric">
+                <a href="https://www.npmjs.org/package/command-line-args">command-line-args</a>
+            </td>
+            <td>19</td>
+            <td></td>
+            <td>3.0.5</td>
+            <td class="mdl-data-table__cell--non-numeric">2016-12-25</td>
+            <td class="mdl-data-table__cell--non-numeric">2014-05-27</td>
+            <td>4</td>
+            <td class="mdl-data-table__cell--non-numeric">
+                <a href="https://github.com/75lb/command-line-args">75lb/command-line-args</a>
+            </td>
+            <td>89</td>
+            <td class="mdl-data-table__cell--non-numeric">2016-12-25</td>
+            <td>279</td>
+        </tr>
+        <tr>
+            <td class="mdl-data-table__cell--non-numeric">
+                <a href="https://www.npmjs.org/package/stdio">stdio</a>
+            </td>
+            <td>8</td>
+            <td></td>
+            <td>0.2.7</td>
+            <td class="mdl-data-table__cell--non-numeric">2014-12-30</td>
+            <td class="mdl-data-table__cell--non-numeric">2013-03-16</td>
+            <td>0</td>
+            <td class="mdl-data-table__cell--non-numeric">
+                <a href="https://github.com/sgmonda/stdio">sgmonda/stdio</a>
+            </td>
+            <td>128</td>
+            <td class="mdl-data-table__cell--non-numeric">2015-03-20</td>
+            <td>208</td>
+        </tr>
+        <tr>
+            <td class="mdl-data-table__cell--non-numeric">
+                <a href="https://www.npmjs.org/package/dashdash">dashdash</a>
+            </td>
+            <td>6</td>
+            <td></td>
+            <td>1.14.1</td>
+            <td class="mdl-data-table__cell--non-numeric">2016-11-23</td>
+            <td class="mdl-data-table__cell--non-numeric">2013-02-28</td>
+            <td>1</td>
+            <td class="mdl-data-table__cell--non-numeric">
+                <a href="https://github.com/trentm/node-dashdash">trentm/node-dashdash</a>
+            </td>
+            <td>94</td>
+            <td class="mdl-data-table__cell--non-numeric">2016-11-23</td>
+            <td>154</td>
+        </tr>
+        <tr>
+            <td class="mdl-data-table__cell--non-numeric">
+                <a href="https://www.npmjs.org/package/getoptie">getoptie</a>
+            </td>
+            <td>0</td>
+            <td></td>
+            <td>1.0.2</td>
+            <td class="mdl-data-table__cell--non-numeric">2015-03-09</td>
+            <td class="mdl-data-table__cell--non-numeric">2015-03-09</td>
+            <td>0</td>
+            <td class="mdl-data-table__cell--non-numeric">
+                <a href="https://github.com/avz/node-getoptie">avz/node-getoptie</a>
+            </td>
+            <td>0</td>
+            <td class="mdl-data-table__cell--non-numeric">2015-03-09</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td class="mdl-data-table__cell--non-numeric">
+                <a href="https://www.npmjs.org/package/argentum">argentum</a>
+            </td>
+            <td>0</td>
+            <td></td>
+            <td>0.6.0</td>
+            <td class="mdl-data-table__cell--non-numeric">2016-07-29</td>
+            <td class="mdl-data-table__cell--non-numeric">2015-11-26</td>
+            <td>0</td>
+            <td class="mdl-data-table__cell--non-numeric">
+                <a href="https://github.com/rumkin/argentum">rumkin/argentum</a>
+            </td>
+            <td>0</td>
+            <td class="mdl-data-table__cell--non-numeric">2016-07-29</td>
+            <td>0</td>
+        </tr>
+    </tbody>
+</table>
+
+    </body>
+</html>
