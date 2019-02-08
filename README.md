@@ -18,11 +18,18 @@ yarn install
 
 ## Generating of Table
 
-To generating of table use the command:
+To generating of table in HTML use the command:
 
 ``` sh
 cd table
 node table.js > table.html
+```
+
+To generating of table in Markdown format add option `--markdown` or `-m`:
+
+``` sh
+cd table
+node table.js --markdown > table.md
 ```
 
 ## Sample for *commander*
