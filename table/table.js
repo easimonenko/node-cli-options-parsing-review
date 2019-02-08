@@ -1,3 +1,12 @@
+'use strict'
+
+/**
+ * table/table.js
+ * License: MIT
+ * (c) 2016, 2019, Evgeny Simonenko <easimonenko@gmail.com>
+ */
+
+const commander = require('commander')
 const fs = require('fs')
 const handlebars = require('handlebars')
 const http = require('http')
@@ -5,12 +14,19 @@ const https = require('https')
 
 const packageNames = require('./package-list.json')
 
-const USE_GITHUB = true
-const USE_NPM = true
+commander.option('--no-github', 'Do not usage of GitHub.', false)
+  .option('--no-npm', 'Do not usage of NPM.', false)
+  .option('--markdown', 'Generating of markdown table.', false)
+  .alias('-m')
+  .parse(process.argv)
+
+const USE_GITHUB = commander['github']
+const USE_NPM = commander['npm']
+const GENERATING_MARKDOWN = commander['markdown']
 
 const packages = []
 
-let syncCounter = 2 * packageNames.length
+let syncCounter = ((USE_GITHUB ? 1 : 0) + (USE_NPM ? 1 : 0)) * packageNames.length
 
 function makeDate(date) {
   const month = (date.getMonth() + 1 < 10 ? '0' : '') + (date.getMonth() + 1)
@@ -28,8 +44,7 @@ packageNames.forEach(
 
     if (USE_NPM) {
       const chunks = []
-      const req = http.request(
-        {
+      const req = http.request({
           hostname: 'registry.npmjs.org',
           port: 80,
           path: '/' + m['npm-name'],
@@ -83,8 +98,7 @@ packageNames.forEach(
 
     if (USE_GITHUB) {
       const chunks = []
-      const req = https.request(
-        {
+      const req = https.request({
           hostname: 'api.github.com',
           port: 443,
           path: '/repos/' + m['github-name'],
@@ -108,8 +122,7 @@ packageNames.forEach(
               packageInfo['githubStars'] = data['stargazers_count']
 
               const commitsChunks = []
-              const commitsReq = https.request(
-                {
+              const commitsReq = https.request({
                   hostname: 'api.github.com',
                   port: 443,
                   path: '/repos/' + m['github-name'] + '/commits',
@@ -180,13 +193,27 @@ function makeHtml() {
     packages.sort((a, b) => {
       return b['rating'] - a['rating']
     })
-    const tHtml = fs.readFileSync('./templates/html.handlebars')
-    const ctHtml = handlebars.compile(tHtml.toString())
-    const tTable = fs.readFileSync('./templates/table.handlebars')
-    const ctTable = handlebars.compile(tTable.toString())
-    process.stdout.write(ctHtml({table: ctTable({ packages: packages })}))
-  }
-  else {
+    packages.forEach((p, i) => {
+      p['number'] = i + 1
+    })
+
+    if (GENERATING_MARKDOWN) {
+      const tTable = fs.readFileSync('./templates/table.md')
+      process.stdout.write(handlebars.compile(tTable.toString())({
+        packages: packages
+      }))
+    } else {
+      const tHtml = fs.readFileSync('./templates/html.handlebars')
+      const ctHtml = handlebars.compile(tHtml.toString())
+      const tTable = fs.readFileSync('./templates/table.handlebars')
+      const ctTable = handlebars.compile(tTable.toString())
+      process.stdout.write(ctHtml({
+        table: ctTable({
+          packages: packages
+        })
+      }))
+    }
+  } else {
     setTimeout(makeHtml, 500)
   }
 }
