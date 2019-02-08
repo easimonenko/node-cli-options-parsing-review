@@ -1,5 +1,4 @@
-[
-  {
+[{
     "github-name": "tj/commander.js",
     "npm-name": "commander"
   },
@@ -56,5 +55,17 @@
   {
     "github-name": "trentm/node-dashdash",
     "npm-name": "dashdash"
+  },
+  {
+    "github-name": "sindresorhus/has-flag",
+    "npm-name": "has-flag"
+  },
+  {
+    "github-name": "lahmatiy/clap",
+    "npm-name": "clap"
+  },
+  {
+    "github-name": "IonicaBizau/clp",
+    "npm-name": "clp"
   }
 ]
