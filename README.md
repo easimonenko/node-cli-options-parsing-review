@@ -2,15 +2,23 @@
 
 Review of modules for parsing command line options in Node.js.
 
-First install packages:
+* [Обзор пакетов Node.js для разбора опций командной строки](./article.ru.md)
+
+For generating of table or for trying of samples install packages first:
 
 ``` sh
 npm install
 ```
 
-## Generate Table
+or
 
-To generate table, use the command:
+``` sh
+yarn install
+```
+
+## Generating of Table
+
+To generating of table use the command:
 
 ``` sh
 cd table
@@ -47,3 +55,7 @@ node yargs.js -h
 node yargs.js --size=middle
 node yargs.js --list 1 2 3 --size=large
 ```
+
+***
+
+(c) 2016, 2019 Evgeny Simonenko <easimonenko@gmail.com>
