@@ -1,13 +1,14 @@
 <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
     <thead>
         <tr>
+            <th>#</th>
             <th class="mdl-data-table__cell--non-numeric">NPM Package</th>
             <th>NPM Stars</th>
             <th>Deprecated</th>
             <th>Last Version</th>
             <th class="mdl-data-table__cell--non-numeric">Last Update</th>
             <th class="mdl-data-table__cell--non-numeric">Created</th>
-            <th>Dependencis</th>
+            <th>Dependencies</th>
             <th class="mdl-data-table__cell--non-numeric">GitHub Repository</th>
             <th>GitHub Stars</th>
             <th class="mdl-data-table__cell--non-numeric">Last Commit</th>
@@ -17,6 +18,7 @@
     <tbody>
         {{#each packages}}
         <tr>
+            <td>{{number}}</td>
             <td class="mdl-data-table__cell--non-numeric">
                 <a href="https://www.npmjs.org/package/{{npmName}}">{{npmName}}</a>
             </td>
