@@ -63,6 +63,10 @@ node yargs.js --size=middle
 node yargs.js --list 1 2 3 --size=large
 ```
 
+## License
+
+The sources of this project distributed by Expat-like license (see file [LICENSE](./LICENSE)). The text of paper in file [article.ru.md](./article.ru.md) distributed by CC-BY-ND 4.0 license. The sources of samples in folder [samples](./samples) in public domain.
+
 ***
 
-(c) 2016, 2019 Evgeny Simonenko <easimonenko@gmail.com>
+(c) 2016, 2019, 2024 Evgeny Simonenko <easimonenko@gmail.com>

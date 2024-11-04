@@ -1,5 +1,10 @@
 # ChangeLog
 
+## Release 1.0.4, 2024-11-02
+
+* Added license for article (CC-BY-ND 4.0).
+* Old update from 2020-01-07.
+
 ## Release 1.0.3, 2016-12-30
 
 Added the section "Few analytics.".

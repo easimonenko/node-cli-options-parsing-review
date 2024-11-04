@@ -13,42 +13,42 @@ Node.js, как и другие среды разработки, предост�
 
 | # | NPM Package | NPM Stars | Deprecated | Last Version | Last Update | Created | Dependencies |
 |-|-|-|-|-|-|-|-|
-| 1 | [commander](https://www.npmjs.org/package/commander) | 1008 |  | 2.19.0 | 2019-01-01 | 2011-08-15 | 0 |
-| 2 | [yargs](https://www.npmjs.org/package/yargs) | 508 |  | 12.0.5 | 2019-02-03 | 2013-11-23 | 12 |
-| 3 | [minimist](https://www.npmjs.org/package/minimist) | 430 |  | 1.2.0 | 2019-01-04 | 2013-06-25 | 0 |
+| 1 | [commander](https://www.npmjs.org/package/commander) | 1011 |  | 4.1.0 | 2020-01-06 | 2011-08-15 | 0 |
+| 2 | [yargs](https://www.npmjs.org/package/yargs) | 512 |  | 15.1.0 | 2020-01-02 | 2013-11-23 | 11 |
+| 3 | [minimist](https://www.npmjs.org/package/minimist) | 432 |  | 1.2.0 | 2019-08-11 | 2013-06-25 | 0 |
 | 4 | [optimist](https://www.npmjs.org/package/optimist) | 143 | V | 0.6.1 | 2018-03-21 | 2010-12-21 | 2 |
-| 5 | [meow](https://www.npmjs.org/package/meow) | 78 |  | 5.0.0 | 2019-02-04 | 2013-01-24 | 9 |
+| 5 | [meow](https://www.npmjs.org/package/meow) | 79 |  | 6.0.0 | 2019-12-07 | 2013-01-24 | 11 |
 | 6 | [cli](https://www.npmjs.org/package/cli) | 69 |  | 1.0.1 | 2018-03-15 | 2011-01-01 | 2 |
-| 7 | [nopt](https://www.npmjs.org/package/nopt) | 47 |  | 4.0.1 | 2017-10-18 | 2011-03-30 | 2 |
-| 8 | [command-line-args](https://www.npmjs.org/package/command-line-args) | 49 |  | 5.0.2 | 2018-06-25 | 2014-05-27 | 5 |
+| 7 | [command-line-args](https://www.npmjs.org/package/command-line-args) | 49 |  | 5.1.1 | 2019-03-31 | 2014-05-27 | 4 |
+| 8 | [nopt](https://www.npmjs.org/package/nopt) | 47 |  | 4.0.1 | 2020-01-02 | 2011-03-30 | 2 |
 | 9 | [nomnom](https://www.npmjs.org/package/nomnom) | 32 | V | 1.8.1 | 2018-03-17 | 2011-04-08 | 2 |
 | 10 | [argparse](https://www.npmjs.org/package/argparse) | 21 |  | 1.0.10 | 2018-02-27 | 2012-05-17 | 1 |
-| 11 | [stdio](https://www.npmjs.org/package/stdio) | 9 |  | 0.2.7 | 2017-12-01 | 2013-03-16 | 0 |
+| 11 | [stdio](https://www.npmjs.org/package/stdio) | 9 |  | 2.0.1 | 2019-12-19 | 2013-03-16 | 0 |
 | 12 | [dashdash](https://www.npmjs.org/package/dashdash) | 9 |  | 1.14.1 | 2017-12-28 | 2013-02-28 | 1 |
-| 13 | [has-flag](https://www.npmjs.org/package/has-flag) | 5 |  | 3.0.0 | 2018-03-20 | 2015-07-08 | 0 |
+| 13 | [has-flag](https://www.npmjs.org/package/has-flag) | 5 |  | 4.0.0 | 2019-04-06 | 2015-07-08 | 0 |
 | 14 | [clp](https://www.npmjs.org/package/clp) | 2 |  | 4.0.11 | 2019-01-03 | 2015-04-17 | 3 |
-| 15 | [clap](https://www.npmjs.org/package/clap) | 1 |  | 1.2.3 | 2017-09-20 | 2014-02-10 | 1 |
+| 15 | [clap](https://www.npmjs.org/package/clap) | 1 |  | 2.0.1 | 2019-12-17 | 2014-02-10 | 1 |
 | 16 | [argentum](https://www.npmjs.org/package/argentum) | 0 |  | 0.6.0 | 2016-07-29 | 2015-11-26 | 0 |
 | 17 | [getoptie](https://www.npmjs.org/package/getoptie) | 0 |  | 1.0.2 | 2015-03-09 | 2015-03-09 | 0 |
 
 | # | NPM Package | GitHub Repository | GitHub Stars | Last Commit |
 |-|-|-|-|-|
-| 1 | [commander](https://www.npmjs.org/package/commander) | [tj/commander.js](https://github.com/tj/commander.js) | 14111 | 2018-12-28 |
-| 2 | [yargs](https://www.npmjs.org/package/yargs) | [yargs/yargs](https://github.com/yargs/yargs) | 5760 | 2019-02-08 |
-| 3 | [minimist](https://www.npmjs.org/package/minimist) | [substack/minimist](https://github.com/substack/minimist) | 3443 | 2015-08-29 |
-| 4 | [optimist](https://www.npmjs.org/package/optimist) | [substack/node-optimist](https://github.com/substack/node-optimist) | 2559 | 2014-02-05 |
-| 5 | [meow](https://www.npmjs.org/package/meow) | [sindresorhus/meow](https://github.com/sindresorhus/meow) | 1651 | 2018-11-05 |
-| 6 | [cli](https://www.npmjs.org/package/cli) | [node-js-libs/cli](https://github.com/node-js-libs/cli) | 765 | 2016-10-23 |
-| 7 | [nopt](https://www.npmjs.org/package/nopt) | [npm/nopt](https://github.com/npm/nopt) | 468 | 2019-01-26 |
-| 8 | [command-line-args](https://www.npmjs.org/package/command-line-args) | [75lb/command-line-args](https://github.com/75lb/command-line-args) | 359 | 2019-01-21 |
-| 9 | [nomnom](https://www.npmjs.org/package/nomnom) | [harthur/nomnom](https://github.com/harthur/nomnom) | 468 | 2015-09-09 |
-| 10 | [argparse](https://www.npmjs.org/package/argparse) | [nodeca/argparse](https://github.com/nodeca/argparse) | 291 | 2018-12-01 |
-| 11 | [stdio](https://www.npmjs.org/package/stdio) | [sgmonda/stdio](https://github.com/sgmonda/stdio) | 139 | 2017-01-24 |
-| 12 | [dashdash](https://www.npmjs.org/package/dashdash) | [trentm/node-dashdash](https://github.com/trentm/node-dashdash) | 123 | 2017-04-18 |
-| 13 | [has-flag](https://www.npmjs.org/package/has-flag) | [sindresorhus/has-flag](https://github.com/sindresorhus/has-flag) | 42 | 2018-12-25 |
+| 1 | [commander](https://www.npmjs.org/package/commander) | [tj/commander.js](https://github.com/tj/commander.js) | 16885 | 2020-01-06 |
+| 2 | [yargs](https://www.npmjs.org/package/yargs) | [yargs/yargs](https://github.com/yargs/yargs) | 7154 | 2020-01-02 |
+| 3 | [minimist](https://www.npmjs.org/package/minimist) | [substack/minimist](https://github.com/substack/minimist) | 3950 | 2015-08-29 |
+| 4 | [optimist](https://www.npmjs.org/package/optimist) | [substack/node-optimist](https://github.com/substack/node-optimist) | 2589 | 2014-02-05 |
+| 5 | [meow](https://www.npmjs.org/package/meow) | [sindresorhus/meow](https://github.com/sindresorhus/meow) | 2032 | 2019-12-07 |
+| 6 | [cli](https://www.npmjs.org/package/cli) | [node-js-libs/cli](https://github.com/node-js-libs/cli) | 772 | 2016-10-23 |
+| 7 | [command-line-args](https://www.npmjs.org/package/command-line-args) | [75lb/command-line-args](https://github.com/75lb/command-line-args) | 451 | 2019-09-22 |
+| 8 | [nopt](https://www.npmjs.org/package/nopt) | [npm/nopt](https://github.com/npm/nopt) | 478 | 2019-01-26 |
+| 9 | [nomnom](https://www.npmjs.org/package/nomnom) | [harthur/nomnom](https://github.com/harthur/nomnom) | 471 | 2015-09-09 |
+| 10 | [argparse](https://www.npmjs.org/package/argparse) | [nodeca/argparse](https://github.com/nodeca/argparse) | 359 | 2019-11-05 |
+| 11 | [stdio](https://www.npmjs.org/package/stdio) | [sgmonda/stdio](https://github.com/sgmonda/stdio) | 143 | 2019-12-19 |
+| 12 | [dashdash](https://www.npmjs.org/package/dashdash) | [trentm/node-dashdash](https://github.com/trentm/node-dashdash) | 124 | 2019-08-28 |
+| 13 | [has-flag](https://www.npmjs.org/package/has-flag) | [sindresorhus/has-flag](https://github.com/sindresorhus/has-flag) | 53 | 2019-05-31 |
 | 14 | [clp](https://www.npmjs.org/package/clp) | [IonicaBizau/clp](https://github.com/IonicaBizau/clp) | 12 | 2019-01-03 |
-| 15 | [clap](https://www.npmjs.org/package/clap) | [lahmatiy/clap](https://github.com/lahmatiy/clap) | 15 | 2017-09-20 |
-| 16 | [argentum](https://www.npmjs.org/package/argentum) | [rumkin/argentum](https://github.com/rumkin/argentum) | 0 | 2016-07-29 |
+| 15 | [clap](https://www.npmjs.org/package/clap) | [lahmatiy/clap](https://github.com/lahmatiy/clap) | 16 | 2020-01-06 |
+| 16 | [argentum](https://www.npmjs.org/package/argentum) | [rumkin/argentum](https://github.com/rumkin/argentum) | 1 | 2016-07-29 |
 | 17 | [getoptie](https://www.npmjs.org/package/getoptie) | [avz/node-getoptie](https://github.com/avz/node-getoptie) | 0 | 2015-03-09 |
 
 Эта таблица была сгенерирована небольшой программой на JavaScript. Исходные
@@ -587,6 +587,20 @@ nomnom (deprecated), stdio, getoptie и argentum. Вероятно эти мод
 Сводная таблица обновлена, преобразована в формат Markdown и дополнена пакетами `has-flag`, `clp` и `clap`. Результаты
 голосования остались примерно такими же, какими были при последнем обновлении от 30 декабря 2016 года.
 
+## Обновление от 7 января 2020
+
+Обновлена сводная таблица. Рейтинг пакетов существенно не изменился. Результаты голосования также показывают, что за год предпочтения ощутимо не поменялись.
+
+## Лицензия
+
+[![Лицензия Creative Commons «Attribution-NoDerivatives»](https://i.creativecommons.org/l/by-nd/4.0/88x31.png)](https://creativecommons.org/licenses/by-nd/4.0/)
+
+Произведение
+[«Обзор пакетов Node.js для разбора опций командной строки»](./article.ru.md),
+созданное автором по имени [Симоненко Евгений Анатольевич](mailto:easimonenko@mail.ru),
+публикуется на условиях
+[лицензии Creative Commons «Attribution-NoDerivatives» («С указанием авторства — Без производных») 4.0 Всемирная](https://creativecommons.org/licenses/by-nd/4.0/).
+
 ---
 
-(c) 2016, 2019 Евгений А. Симоненко <easimonenko@mail.ru>
+(c) 2016, 2019, 2020, 2024 Евгений А. Симоненко <easimonenko@mail.ru>
