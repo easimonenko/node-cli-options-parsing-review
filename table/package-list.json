@@ -3,7 +3,7 @@
     "npm-name": "commander"
   },
   {
-    "github-name": "substack/minimist",
+    "github-name": "minimistjs/minimist",
     "npm-name": "minimist"
   },
   {
@@ -67,5 +67,13 @@
   {
     "github-name": "IonicaBizau/clp",
     "npm-name": "clp"
-  }
+  },
+ {
+   "github-name": "jorgebucaran/getopts",
+   "npm-name": "getopts"
+ },
+ {
+   "github-name": "appcelerator/cli-kit",
+   "npm-name": "cli-kit"
+ }
 ]
