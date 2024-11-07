@@ -23,12 +23,12 @@
   },
   "homepage": "https://github.com/easimonenko/node-cli-options-parsing-review#readme",
   "devDependencies": {
-    "handlebars": "^4.0.5"
+    "handlebars": "^4.7.8"
   },
   "dependencies": {
-    "commander": "^4.1.0",
-    "minimist": "^1.2.0",
-    "yargs": "^15.1.0"
+    "commander": "^4.1.1",
+    "minimist": "^1.2.8",
+    "yargs": "^15.4.1"
   },
   "private": true
 }
