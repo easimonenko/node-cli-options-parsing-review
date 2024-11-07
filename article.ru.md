@@ -63,25 +63,25 @@ Node.js, как и другие среды разработки, предост�
 
 | # | NPM Package | GitHub Repository | GitHub Stars | Last Commit |
 |-|-|-|-|-|
-| 1 | [commander](https://www.npmjs.org/package/commander) | [tj/commander.js](https://github.com/tj/commander.js) | 26764 | 2024-05-18 |
+| 1 | [commander](https://www.npmjs.org/package/commander) | [tj/commander.js](https://github.com/tj/commander.js) | 26765 | 2024-05-18 |
 | 2 | [yargs](https://www.npmjs.org/package/yargs) | [yargs/yargs](https://github.com/yargs/yargs) | 11097 | 2024-01-05 |
 | 3 | [meow](https://www.npmjs.org/package/meow) | [sindresorhus/meow](https://github.com/sindresorhus/meow) | 3543 | 2024-03-03 |
 | 4 | [cli](https://www.npmjs.org/package/cli) | [node-js-libs/cli](https://github.com/node-js-libs/cli) | 803 | 2016-10-23 |
-| 5 | [getopts](https://www.npmjs.org/package/getopts) | [jorgebucaran/getopts](https://github.com/jorgebucaran/getopts) | 634 | 2021-02-15 |
-| 6 | [minimist](https://www.npmjs.org/package/minimist) | [minimistjs/minimist](https://github.com/minimistjs/minimist) | 548 | 2024-06-12 |
-| 7 | [optimist](https://www.npmjs.org/package/optimist) | [substack/node-optimist](https://github.com/substack/node-optimist) |  |  |
-| 8 | [command-line-args](https://www.npmjs.org/package/command-line-args) | [75lb/command-line-args](https://github.com/75lb/command-line-args) | 693 | 2024-10-28 |
-| 9 | [nopt](https://www.npmjs.org/package/nopt) | [npm/nopt](https://github.com/npm/nopt) | 528 | 2024-09-26 |
-| 10 | [argparse](https://www.npmjs.org/package/argparse) | [nodeca/argparse](https://github.com/nodeca/argparse) | 491 | 2022-05-10 |
-| 11 | [nomnom](https://www.npmjs.org/package/nomnom) | [harthur/nomnom](https://github.com/harthur/nomnom) | 470 | 2015-09-09 |
-| 12 | [dashdash](https://www.npmjs.org/package/dashdash) | [trentm/node-dashdash](https://github.com/trentm/node-dashdash) | 175 | 2021-05-09 |
-| 13 | [stdio](https://www.npmjs.org/package/stdio) | [sgmonda/stdio](https://github.com/sgmonda/stdio) | 158 | 2024-01-25 |
-| 14 | [has-flag](https://www.npmjs.org/package/has-flag) | [sindresorhus/has-flag](https://github.com/sindresorhus/has-flag) | 92 | 2021-07-19 |
-| 15 | [clap](https://www.npmjs.org/package/clap) | [lahmatiy/clap](https://github.com/lahmatiy/clap) | 19 | 2022-04-20 |
-| 16 | [cli-kit](https://www.npmjs.org/package/cli-kit) | [appcelerator/cli-kit](https://github.com/appcelerator/cli-kit) | 15 | 2022-07-07 |
-| 17 | [clp](https://www.npmjs.org/package/clp) | [IonicaBizau/clp](https://github.com/IonicaBizau/clp) | 12 | 2020-08-09 |
-| 18 | [argentum](https://www.npmjs.org/package/argentum) | [rumkin/argentum](https://github.com/rumkin/argentum) | 1 | 2016-07-29 |
-| 19 | [getoptie](https://www.npmjs.org/package/getoptie) | [avz/node-getoptie](https://github.com/avz/node-getoptie) | 0 | 2015-03-09 |
+| 5 | [command-line-args](https://www.npmjs.org/package/command-line-args) | [75lb/command-line-args](https://github.com/75lb/command-line-args) | 693 | 2024-10-28 |
+| 6 | [getopts](https://www.npmjs.org/package/getopts) | [jorgebucaran/getopts](https://github.com/jorgebucaran/getopts) | 634 | 2021-02-15 |
+| 7 | [minimist](https://www.npmjs.org/package/minimist) | [minimistjs/minimist](https://github.com/minimistjs/minimist) | 548 | 2024-06-12 |
+| 8 | [nopt](https://www.npmjs.org/package/nopt) | [npm/nopt](https://github.com/npm/nopt) | 528 | 2024-09-26 |
+| 9 | [argparse](https://www.npmjs.org/package/argparse) | [nodeca/argparse](https://github.com/nodeca/argparse) | 491 | 2022-05-10 |
+| 10 | [nomnom](https://www.npmjs.org/package/nomnom) | [harthur/nomnom](https://github.com/harthur/nomnom) | 470 | 2015-09-09 |
+| 11 | [dashdash](https://www.npmjs.org/package/dashdash) | [trentm/node-dashdash](https://github.com/trentm/node-dashdash) | 175 | 2021-05-09 |
+| 12 | [stdio](https://www.npmjs.org/package/stdio) | [sgmonda/stdio](https://github.com/sgmonda/stdio) | 158 | 2024-01-25 |
+| 13 | [has-flag](https://www.npmjs.org/package/has-flag) | [sindresorhus/has-flag](https://github.com/sindresorhus/has-flag) | 93 | 2021-07-19 |
+| 14 | [clap](https://www.npmjs.org/package/clap) | [lahmatiy/clap](https://github.com/lahmatiy/clap) | 19 | 2022-04-20 |
+| 15 | [cli-kit](https://www.npmjs.org/package/cli-kit) | [appcelerator/cli-kit](https://github.com/appcelerator/cli-kit) | 15 | 2022-07-07 |
+| 16 | [clp](https://www.npmjs.org/package/clp) | [IonicaBizau/clp](https://github.com/IonicaBizau/clp) | 12 | 2020-08-09 |
+| 17 | [argentum](https://www.npmjs.org/package/argentum) | [rumkin/argentum](https://github.com/rumkin/argentum) | 1 | 2016-07-29 |
+| 18 | [getoptie](https://www.npmjs.org/package/getoptie) | [avz/node-getoptie](https://github.com/avz/node-getoptie) | 0 | 2015-03-09 |
+| 19 | [optimist](https://www.npmjs.org/package/optimist) | [substack/node-optimist](https://github.com/substack/node-optimist) | -1 |  |
 
 Таблица по сведениям из GitHub от 2020-01-07:
 
@@ -649,7 +649,7 @@ nomnom (deprecated), stdio, getoptie и argentum. Вероятно эти мод
 
 ## Обновление от 7 ноября 2024
 
-Четыре года существенно не повлияли на популярность перечисленных в начале статьи пакетов. Но есть важное исключение: `minimist` и `optimist`, о чём сказано в начале статьи. Также было добавлено ещё два пакета `getopts` (попавший сразу на 5-е место) и `cli-kit` (один из аутсайдеров рейтинга).
+Четыре года существенно не повлияли на популярность перечисленных в начале статьи пакетов. Но есть важное исключение: `minimist` и `optimist`, о чём сказано в начале статьи. Также было добавлено ещё два пакета `getopts` (попавший сразу на 6-е место) и `cli-kit` (один из аутсайдеров рейтинга).
 
 ## Лицензия
 

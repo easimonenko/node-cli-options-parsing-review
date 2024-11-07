@@ -110,6 +110,7 @@ packageNames.forEach(
                 syncCounter -= 1
               }
             } else {
+              packageInfo['githubStars'] = -1
               console.error(m['github-name'] + ': GitHub ' + res.statusCode)
               syncCounter -= 1
             }
