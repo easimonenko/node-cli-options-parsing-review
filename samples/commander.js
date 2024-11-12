@@ -8,20 +8,23 @@ function toArray(values) {
   return values.split(',').map((v) => parseInt(v))
 }
 
-commander
+const cmd = new commander.Command()
+
+cmd
+  .name("commander")
+  .description("Commander sample.")
   .version('0.2.0')
   .option('-a', 'option a')
   .option('-b', 'option b')
   .option('--camel-case-option', 'camel case option')
   .option('-s, --source <path>', 'source file')
-  .option('-l, --list [items]', 'value list', toArray, [])
+  .option('-l, --list [items...]', 'value list', toArray, [])
+  .option('-r, --array [items...]', 'value list')
   .option('--size [size]', 'size', /^(large|medium|small)$/i)
-
-commander
   .command('search <first> [other...]', 'search with query')
   .alias('s')
 
-commander.on('--help', () => {
+cmd.on('--help', () => {
   console.log('  Examples:')
   console.log('')
   console.log('    node commander.js')
@@ -40,36 +43,6 @@ commander.on('--help', () => {
   console.log('    node commander.js -ab')
 })
 
-commander.parse(process.argv)
+cmd.parse(process.argv)
 
-if (commander.source) {
-  console.log('source: ', commander.source)
-}
-
-if (commander.camelCaseOption) {
-  console.log('camelCaseOption: ', commander.camelCaseOption)
-}
-
-if (commander.list) {
-  console.log('list: ', commander.list)
-}
-
-if (commander.size) {
-  console.log('size: ', commander.size)
-}
-
-if (commander.search) {
-  console.log('query: ', commander.search)
-}
-
-if (commander.a) {
-  console.log('a: ', commander.a)
-}
-
-if (commander.b) {
-  console.log('b: ', commander.b)
-}
-
-if (commander.c) {
-  console.log('c: ', commander.c)
-}
+console.log(cmd.opts())

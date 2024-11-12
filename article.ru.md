@@ -157,7 +157,13 @@ _Примечание._ В прежней версии статьи считал
 const commander = require('commander')
 ```
 
-Мы можем, вызывая последовательно или раздельно его функции, настроить его на
+Создаём объект класса `Command`:
+
+``` javascript
+const cmd = new commander.Command()
+```
+
+И далее, мы можем, вызывая последовательно или раздельно его функции, настроить его на
 обработку опций командной строки. При этом пакет обеспечивает:
 
 * короткие опции, например, `-s`;
@@ -173,24 +179,31 @@ const commander = require('commander')
 Короткие опции объявляются так:
 
 ``` javascript
-commander
+cmd
   .option('-a', 'option a')
 ```
 
 Первый аргумент функции `option` задаёт формат опции, а второй даёт ей словесное
-описание. Доступ к опции `-a` в коде программы осуществляется через
-соответствующее свойство `commander`:
+описание.
+
+Доступ к опции `-a` в коде программы осуществляется через вызов метода `opts()` объекта класса `Commander`:
 
 ``` javascript
-if (commander.a) {
-  console.log(commander.a)
+if (cmd.opts().a) {
+  console.log(cmd.opts().a)
 }
+```
+
+Для удобства создадим ссылку:
+
+``` javascript
+const options = cmd.opts()
 ```
 
 Пример для длинной опции:
 
 ``` javascript
-commander
+cmd
   .option('--camel-case-option', 'camel case option')
 ```
 
@@ -199,7 +212,7 @@ commander
 Возможно задание для опций параметров как обязательных, так необязательных:
 
 ``` javascript
-commander
+cmd
   .option('-s, --source <path>', 'source file')
   .option('-l, --list [items]', 'value list', toArray, [])
 ```
@@ -221,7 +234,7 @@ commander
 субкоманды передаются модулю команды.
 
 ``` javascript
-commander
+cmd
   .command('search <first> [other...]', 'search with query')
   .alias('s')
 ```
@@ -229,14 +242,14 @@ commander
 Для автоматической подсказки можно указать версию программы:
 
 ``` javascript
-commander.version('0.2.0')
+cmd.version('0.2.0')
 ```
 
 Подсказка может быть сопровождена дополнительными действия, например, дополнена
 нестандартными текстом. Для этого нужно обрабатывать событие `--help`.
 
 ``` javascript
-commander.on('--help', () => {
+cmd.on('--help', () => {
   console.log('  Examples:')
   console.log('')
   console.log('    node commander.js')
@@ -252,7 +265,7 @@ commander.on('--help', () => {
 Завершается настройка вызовом функции `parse` с параметром `process.argv`:
 
 ``` javascript
-commander.parse(process.argv)
+cmd.parse(process.argv)
 ```
 
 ## minimist
